@@ -1,0 +1,23 @@
+---
+title: Process surface
+description: Reference for the `Process surface` schema.
+---
+
+## Referenced In
+
+- [Type keys (detailed)](/reference/schemas/type-keys-detailed)
+- [closeSurface](/reference/schemas/closesurface)
+
+## Fields
+
+| Field | Type | Description | Default |
+| :--- | :--- | :--- | :--- |
+| process | string | Required. Name of a background process started by a runShell/runCode `background` step.<br /><br />Minimum length: 1. Pattern: `\S` | — |
+
+## Examples
+
+```json
+{
+  "process": "example"
+}
+```

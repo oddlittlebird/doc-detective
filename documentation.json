@@ -1,0 +1,1094 @@
+{
+  "name": "Documentation",
+  "initialRoute": "index",
+  "template": "classic",
+  "icons": {
+    "library": "fontawesome"
+  },
+  "colors": {
+    "light": {
+      "brand": "#22623d"
+    },
+    "dark": {
+      "brand": "#3eb16e"
+    }
+  },
+  "logo-light": "https://blob-cdn.documentation.ai/org-8c219759-7deb-445b-9908-6f7ab2e0f2a9/doc-e8ed780d-3d1b-44eb-a4e7-ece8319a2c12/1792613083573-o8ugneobks-doc-detective.png?fm=auto&auto=compress%2Cformat",
+  "logo-dark": "https://blob-cdn.documentation.ai/org-8c219759-7deb-445b-9908-6f7ab2e0f2a9/doc-e8ed780d-3d1b-44eb-a4e7-ece8319a2c12/1792613083573-o8ugneobks-doc-detective.png?fm=auto&auto=compress%2Cformat",
+  "favicon": "https://blob-cdn.documentation.ai/org-8c219759-7deb-445b-9908-6f7ab2e0f2a9/doc-e8ed780d-3d1b-44eb-a4e7-ece8319a2c12/1792613086245-c3xkse4xegj-favicon.ico?fm=auto&auto=compress%2Cformat",
+  "navbar": {
+    "actions": {
+      "links": [
+        {
+          "title": "Discord",
+          "link": "https://discord.gg/2M7wXEThfF"
+        },
+        {
+          "title": "GitHub",
+          "link": "https://github.com/doc-detective/doc-detective"
+        }
+      ]
+    }
+  },
+  "customCss": [
+    {
+      "src": "styles/migration.css"
+    }
+  ],
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Home",
+        "icon": "house",
+        "groups": [
+          {
+            "group": "Home",
+            "pages": [
+              {
+                "title": "Welcome",
+                "path": "index",
+                "icon": "lucide:sparkles"
+              }
+            ],
+            "icon": "lucide:house"
+          }
+        ]
+      },
+      {
+        "tab": "Documentation",
+        "icon": "file",
+        "groups": [
+          {
+            "group": "Get started",
+            "pages": [
+              {
+                "title": "Introduction",
+                "path": "docs/get-started/introduction",
+                "icon": "lucide:star"
+              },
+              {
+                "title": "Installation",
+                "path": "docs/get-started/installation",
+                "icon": "lucide:download"
+              },
+              {
+                "title": "Concepts",
+                "path": "docs/get-started/concepts",
+                "icon": "lucide:cog"
+              },
+              {
+                "title": "Create your first test",
+                "path": "docs/get-started/create-your-first-test",
+                "icon": "lucide:test-tube"
+              },
+              {
+                "title": "How testing works",
+                "path": "docs/get-started/how-testing-works",
+                "icon": "lucide:test-tube"
+              },
+              {
+                "title": "Sample tests",
+                "path": "docs/get-started/sample-tests",
+                "icon": "lucide:code"
+              }
+            ],
+            "icon": "lucide:rocket"
+          },
+          {
+            "group": "Test your docs",
+            "pages": [
+              {
+                "title": "Overview",
+                "path": "docs/test-docs/overview",
+                "icon": "lucide:info"
+              },
+              {
+                "title": "Inline tests",
+                "path": "docs/test-docs/inline",
+                "icon": "lucide:test-tube"
+              },
+              {
+                "title": "Detected tests",
+                "path": "docs/test-docs/detected",
+                "icon": "lucide:test-tube"
+              },
+              {
+                "title": "Standalone tests",
+                "path": "docs/test-docs/standalone",
+                "icon": "lucide:test-tube"
+              },
+              {
+                "group": "UI procedures",
+                "pages": [
+                  {
+                    "title": "Fill fields",
+                    "path": "docs/test-docs/fill-fields"
+                  },
+                  {
+                    "group": "Screenshots",
+                    "pages": [
+                      {
+                        "title": "Capture screenshots",
+                        "path": "docs/test-docs/capture-screenshots-guide"
+                      },
+                      {
+                        "title": "Screenshot visual regression",
+                        "path": "docs/test-docs/screenshot-visual-regression"
+                      },
+                      {
+                        "title": "Automatic screenshots",
+                        "path": "docs/test-docs/automatic-screenshots"
+                      },
+                      {
+                        "title": "Annotate screenshots",
+                        "path": "docs/test-docs/annotate-screenshots"
+                      },
+                      {
+                        "title": "Screenshot example",
+                        "path": "docs/test-docs/capture-screenshots"
+                      }
+                    ],
+                    "icon": "lucide:folder"
+                  },
+                  {
+                    "group": "Recording",
+                    "pages": [
+                      {
+                        "title": "Record video",
+                        "path": "docs/test-docs/record-video-guide",
+                        "icon": "lucide:video"
+                      },
+                      {
+                        "title": "Video visual regression",
+                        "path": "docs/test-docs/video-visual-regression",
+                        "icon": "lucide:video"
+                      },
+                      {
+                        "title": "Automatic recording",
+                        "path": "docs/test-docs/automatic-recording",
+                        "icon": "lucide:file-text"
+                      },
+                      {
+                        "title": "Narrate recordings",
+                        "path": "docs/test-docs/narrate-recordings",
+                        "icon": "lucide:file-text"
+                      },
+                      {
+                        "title": "Recording example",
+                        "path": "docs/test-docs/record-video",
+                        "icon": "lucide:code"
+                      }
+                    ],
+                    "icon": "lucide:folder"
+                  },
+                  {
+                    "title": "Multiple tabs, windows & browsers",
+                    "path": "docs/test-docs/multiple-tabs-and-windows"
+                  },
+                  {
+                    "group": "Native & mobile apps (experimental)",
+                    "pages": [
+                      {
+                        "title": "Native Windows apps",
+                        "path": "docs/test-docs/native-windows-apps",
+                        "icon": "lucide:layout-grid"
+                      },
+                      {
+                        "title": "Native macOS apps",
+                        "path": "docs/test-docs/native-macos-apps",
+                        "icon": "lucide:layout-grid"
+                      },
+                      {
+                        "title": "Android apps",
+                        "path": "docs/test-docs/android-apps",
+                        "icon": "lucide:smartphone"
+                      },
+                      {
+                        "title": "iOS apps",
+                        "path": "docs/test-docs/ios-apps",
+                        "icon": "lucide:smartphone"
+                      }
+                    ],
+                    "icon": "lucide:smartphone"
+                  }
+                ],
+                "icon": "lucide:folder"
+              },
+              {
+                "group": "CLI, code & APIs",
+                "pages": [
+                  {
+                    "title": "Run shell & code",
+                    "path": "docs/test-docs/run-shell-and-code",
+                    "icon": "lucide:square-terminal"
+                  },
+                  {
+                    "title": "HTTP & APIs",
+                    "path": "docs/test-docs/http-and-api",
+                    "icon": "lucide:file-text"
+                  },
+                  {
+                    "title": "Generate requests from OpenAPI",
+                    "path": "docs/test-docs/generate-tests-from-openapi",
+                    "icon": "lucide:braces"
+                  },
+                  {
+                    "title": "Integrations",
+                    "path": "docs/test-docs/integrations",
+                    "icon": "lucide:puzzle"
+                  }
+                ],
+                "icon": "lucide:terminal"
+              },
+              {
+                "group": "Formats & surfaces",
+                "pages": [
+                  {
+                    "group": "Input formats",
+                    "pages": [
+                      {
+                        "title": "Overview",
+                        "path": "docs/test-docs/input-formats/overview"
+                      },
+                      {
+                        "title": "Markdown",
+                        "path": "docs/test-docs/input-formats/markdown"
+                      },
+                      {
+                        "title": "DITA",
+                        "path": "docs/test-docs/input-formats/dita"
+                      },
+                      {
+                        "title": "AsciiDoc",
+                        "path": "docs/test-docs/input-formats/asciidoc"
+                      },
+                      {
+                        "title": "HTML",
+                        "path": "docs/test-docs/input-formats/html"
+                      },
+                      {
+                        "title": "Custom",
+                        "path": "docs/test-docs/input-formats/custom"
+                      }
+                    ],
+                    "icon": "lucide:folder"
+                  },
+                  {
+                    "title": "Test across platforms & browsers",
+                    "path": "docs/test-docs/platforms-and-browsers",
+                    "icon": "lucide:test-tube"
+                  },
+                  {
+                    "title": "Heretto",
+                    "path": "docs/test-docs/heretto",
+                    "icon": "lucide:file-text"
+                  }
+                ],
+                "icon": "lucide:folder"
+              }
+            ],
+            "icon": "lucide:test-tube"
+          },
+          {
+            "group": "Run in CI & at scale",
+            "pages": [
+              {
+                "title": "Overview",
+                "path": "docs/ci/overview",
+                "icon": "lucide:info"
+              },
+              {
+                "title": "GitHub Action",
+                "path": "docs/ci/github-action",
+                "icon": "lucide:file-text"
+              },
+              {
+                "title": "Set up your test environment",
+                "path": "docs/ci/set-up-environment",
+                "icon": "lucide:test-tube"
+              },
+              {
+                "title": "Reporters & artifacts",
+                "path": "docs/ci/reporters-and-artifacts",
+                "icon": "lucide:file-text"
+              },
+              {
+                "title": "Docker & headless",
+                "path": "docs/ci/docker-and-headless",
+                "icon": "lucide:container"
+              }
+            ],
+            "icon": "lucide:folder"
+          },
+          {
+            "group": "Troubleshoot",
+            "pages": [
+              {
+                "title": "Troubleshoot a failing or flaky test",
+                "path": "docs/troubleshoot/overview",
+                "icon": "lucide:triangle-alert"
+              }
+            ],
+            "icon": "lucide:triangle-alert"
+          },
+          {
+            "group": "Actions",
+            "pages": [
+              {
+                "title": "annotate",
+                "path": "docs/actions/annotate"
+              },
+              {
+                "title": "checkLink",
+                "path": "docs/actions/checklink"
+              },
+              {
+                "title": "click",
+                "path": "docs/actions/click"
+              },
+              {
+                "title": "closeSurface",
+                "path": "docs/actions/closesurface"
+              },
+              {
+                "title": "dragAndDrop",
+                "path": "docs/actions/draganddrop"
+              },
+              {
+                "title": "find",
+                "path": "docs/actions/find"
+              },
+              {
+                "title": "goTo",
+                "path": "docs/actions/goto"
+              },
+              {
+                "title": "httpRequest",
+                "path": "docs/actions/httprequest"
+              },
+              {
+                "title": "loadCookie",
+                "path": "docs/actions/loadcookie"
+              },
+              {
+                "title": "loadVariables",
+                "path": "docs/actions/loadvariables"
+              },
+              {
+                "title": "record",
+                "path": "docs/actions/record"
+              },
+              {
+                "title": "runBrowserScript",
+                "path": "docs/actions/runbrowserscript"
+              },
+              {
+                "title": "runCode",
+                "path": "docs/actions/runcode"
+              },
+              {
+                "title": "runShell",
+                "path": "docs/actions/runshell"
+              },
+              {
+                "title": "saveCookie",
+                "path": "docs/actions/savecookie"
+              },
+              {
+                "title": "screenshot",
+                "path": "docs/actions/screenshot"
+              },
+              {
+                "title": "startSurface",
+                "path": "docs/actions/startsurface"
+              },
+              {
+                "title": "stopRecord",
+                "path": "docs/actions/stoprecord"
+              },
+              {
+                "title": "swipe",
+                "path": "docs/actions/swipe"
+              },
+              {
+                "title": "type",
+                "path": "docs/actions/type"
+              },
+              {
+                "title": "wait",
+                "path": "docs/actions/wait"
+              }
+            ],
+            "icon": "lucide:folder"
+          },
+          {
+            "group": "Selectors",
+            "pages": [
+              {
+                "title": "CSS selectors",
+                "path": "docs/selectors/css"
+              },
+              {
+                "title": "XPath selectors",
+                "path": "docs/selectors/xpath"
+              }
+            ],
+            "icon": "lucide:folder"
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              {
+                "title": "Setup issues",
+                "path": "docs/troubleshooting/setup-issues",
+                "icon": "lucide:wrench"
+              }
+            ],
+            "icon": "lucide:triangle-alert"
+          }
+        ]
+      },
+      {
+        "tab": "AI & Agents",
+        "icon": "robot",
+        "groups": [
+          {
+            "group": "AI & Agents",
+            "pages": [
+              {
+                "title": "Overview",
+                "path": "ai/ai-agents/overview",
+                "icon": "lucide:info"
+              },
+              {
+                "title": "Claude Code",
+                "path": "ai/ai-agents/claude-code",
+                "icon": "lucide:file-text"
+              },
+              {
+                "title": "Copilot CLI",
+                "path": "ai/ai-agents/copilot-cli",
+                "icon": "lucide:terminal"
+              },
+              {
+                "title": "Gemini CLI",
+                "path": "ai/ai-agents/gemini-cli",
+                "icon": "lucide:terminal"
+              },
+              {
+                "title": "Other assistants",
+                "path": "ai/ai-agents/other-assistants",
+                "icon": "lucide:file-text"
+              },
+              {
+                "title": "Agent tools & MCP",
+                "path": "ai/ai-agents/agent-tools-and-mcp",
+                "icon": "lucide:bot"
+              },
+              {
+                "title": "Self-healing",
+                "path": "ai/ai-agents/self-healing",
+                "icon": "lucide:file-text"
+              }
+            ],
+            "icon": "lucide:sparkles"
+          }
+        ]
+      },
+      {
+        "tab": "Reference",
+        "groups": [
+          {
+            "group": "Reference",
+            "pages": [
+              {
+                "title": "Glossary",
+                "path": "reference/reference/glossary",
+                "icon": "lucide:book-a"
+              },
+              {
+                "title": "Expressions",
+                "path": "reference/reference/expressions",
+                "icon": "lucide:file-text"
+              },
+              {
+                "title": "CLI commands and flags",
+                "path": "reference/reference/cli",
+                "icon": "lucide:terminal"
+              },
+              {
+                "group": "CLI",
+                "pages": [
+                  {
+                    "title": "install",
+                    "path": "reference/reference/cli/install",
+                    "icon": "lucide:download"
+                  }
+                ],
+                "icon": "lucide:terminal"
+              }
+            ],
+            "icon": "lucide:book-marked"
+          },
+          {
+            "group": "Schemas",
+            "pages": [
+              {
+                "title": "annotate",
+                "path": "reference/schemas/annotate"
+              },
+              {
+                "title": "Annotate fields",
+                "path": "reference/schemas/annotate-fields"
+              },
+              {
+                "title": "annotation",
+                "path": "reference/schemas/annotation"
+              },
+              {
+                "title": "Annotation defaults",
+                "path": "reference/schemas/annotation-defaults"
+              },
+              {
+                "title": "Annotation fields",
+                "path": "reference/schemas/annotation-fields"
+              },
+              {
+                "title": "Annotation offset",
+                "path": "reference/schemas/annotation-offset"
+              },
+              {
+                "title": "Annotation point",
+                "path": "reference/schemas/annotation-point"
+              },
+              {
+                "title": "Annotation style",
+                "path": "reference/schemas/annotation-style"
+              },
+              {
+                "title": "Annotation transition",
+                "path": "reference/schemas/annotation-transition"
+              },
+              {
+                "title": "App descriptor",
+                "path": "reference/schemas/app-descriptor"
+              },
+              {
+                "title": "App readiness",
+                "path": "reference/schemas/app-readiness"
+              },
+              {
+                "title": "App surface",
+                "path": "reference/schemas/app-surface"
+              },
+              {
+                "title": "assertion",
+                "path": "reference/schemas/assertion"
+              },
+              {
+                "title": "Browser",
+                "path": "reference/schemas/browser"
+              },
+              {
+                "title": "Browser descriptor",
+                "path": "reference/schemas/browser-descriptor"
+              },
+              {
+                "title": "Browser readiness",
+                "path": "reference/schemas/browser-readiness"
+              },
+              {
+                "title": "Browser surface",
+                "path": "reference/schemas/browser-surface"
+              },
+              {
+                "title": "Browser Viewport",
+                "path": "reference/schemas/browser-viewport"
+              },
+              {
+                "title": "Browser viewport size",
+                "path": "reference/schemas/browser-viewport-size"
+              },
+              {
+                "title": "Browser Window",
+                "path": "reference/schemas/browser-window"
+              },
+              {
+                "title": "Browser window size",
+                "path": "reference/schemas/browser-window-size"
+              },
+              {
+                "title": "By criteria",
+                "path": "reference/schemas/by-criteria"
+              },
+              {
+                "title": "Capture screenshot (detailed)",
+                "path": "reference/schemas/capture-screenshot-detailed"
+              },
+              {
+                "title": "Capture screenshot fields",
+                "path": "reference/schemas/capture-screenshot-fields"
+              },
+              {
+                "title": "Check link (detailed)",
+                "path": "reference/schemas/check-link-detailed"
+              },
+              {
+                "title": "checkLink",
+                "path": "reference/schemas/checklink"
+              },
+              {
+                "title": "click",
+                "path": "reference/schemas/click"
+              },
+              {
+                "title": "Click element (detailed)",
+                "path": "reference/schemas/click-element-detailed"
+              },
+              {
+                "title": "closeSurface",
+                "path": "reference/schemas/closesurface"
+              },
+              {
+                "title": "Common",
+                "path": "reference/schemas/common"
+              },
+              {
+                "title": "config",
+                "path": "reference/schemas/config"
+              },
+              {
+                "title": "context",
+                "path": "reference/schemas/context"
+              },
+              {
+                "title": "Crop by element (detailed)",
+                "path": "reference/schemas/crop-by-element-detailed"
+              },
+              {
+                "title": "Device descriptor",
+                "path": "reference/schemas/device-descriptor"
+              },
+              {
+                "title": "Doc Detective Orchestration API",
+                "path": "reference/schemas/doc-detective-orchestration-api"
+              },
+              {
+                "title": "dragAndDrop",
+                "path": "reference/schemas/draganddrop"
+              },
+              {
+                "title": "Element criteria",
+                "path": "reference/schemas/element-criteria"
+              },
+              {
+                "title": "Element (detailed)",
+                "path": "reference/schemas/element-detailed"
+              },
+              {
+                "title": "Element-finding fields",
+                "path": "reference/schemas/element-finding-fields"
+              },
+              {
+                "title": "Environment details",
+                "path": "reference/schemas/environment-details"
+              },
+              {
+                "title": "File type (custom)",
+                "path": "reference/schemas/file-type-custom"
+              },
+              {
+                "title": "File type (executable)",
+                "path": "reference/schemas/file-type-executable"
+              },
+              {
+                "title": "find",
+                "path": "reference/schemas/find"
+              },
+              {
+                "title": "Find element and click",
+                "path": "reference/schemas/find-element-and-click"
+              },
+              {
+                "title": "Find element (detailed)",
+                "path": "reference/schemas/find-element-detailed"
+              },
+              {
+                "title": "Go to URL (detailed)",
+                "path": "reference/schemas/go-to-url-detailed"
+              },
+              {
+                "title": "goTo",
+                "path": "reference/schemas/goto"
+              },
+              {
+                "title": "Heretto CMS integration",
+                "path": "reference/schemas/heretto-cms-integration"
+              },
+              {
+                "title": "Hints options",
+                "path": "reference/schemas/hints-options"
+              },
+              {
+                "title": "HTTP request (detailed)",
+                "path": "reference/schemas/http-request-detailed"
+              },
+              {
+                "title": "httpRequest",
+                "path": "reference/schemas/httprequest"
+              },
+              {
+                "title": "Identified annotation",
+                "path": "reference/schemas/identified-annotation"
+              },
+              {
+                "title": "Inline statement definition",
+                "path": "reference/schemas/inline-statement-definition"
+              },
+              {
+                "title": "Integrations options",
+                "path": "reference/schemas/integrations-options"
+              },
+              {
+                "title": "Load cookie (detailed)",
+                "path": "reference/schemas/load-cookie-detailed"
+              },
+              {
+                "title": "loadCookie",
+                "path": "reference/schemas/loadcookie"
+              },
+              {
+                "title": "loadVariables",
+                "path": "reference/schemas/loadvariables"
+              },
+              {
+                "title": "Markup definition",
+                "path": "reference/schemas/markup-definition"
+              },
+              {
+                "title": "openApi",
+                "path": "reference/schemas/openapi"
+              },
+              {
+                "title": "Padding (detailed)",
+                "path": "reference/schemas/padding-detailed"
+              },
+              {
+                "title": "Point",
+                "path": "reference/schemas/point"
+              },
+              {
+                "title": "Process descriptor",
+                "path": "reference/schemas/process-descriptor"
+              },
+              {
+                "title": "Process readiness",
+                "path": "reference/schemas/process-readiness"
+              },
+              {
+                "title": "Process surface",
+                "path": "reference/schemas/process-surface"
+              },
+              {
+                "title": "record",
+                "path": "reference/schemas/record"
+              },
+              {
+                "title": "Record (detailed)",
+                "path": "reference/schemas/record-detailed"
+              },
+              {
+                "title": "Recording checkpoints (detailed)",
+                "path": "reference/schemas/recording-checkpoints-detailed"
+              },
+              {
+                "title": "Recording engine (detailed)",
+                "path": "reference/schemas/recording-engine-detailed"
+              },
+              {
+                "title": "Recording verify guards",
+                "path": "reference/schemas/recording-verify-guards"
+              },
+              {
+                "title": "Request",
+                "path": "reference/schemas/request"
+              },
+              {
+                "title": "Request body (object)",
+                "path": "reference/schemas/request-body-object"
+              },
+              {
+                "title": "Request headers (object)",
+                "path": "reference/schemas/request-headers-object"
+              },
+              {
+                "title": "Request parameters",
+                "path": "reference/schemas/request-parameters"
+              },
+              {
+                "title": "Requirements",
+                "path": "reference/schemas/requirements"
+              },
+              {
+                "title": "Resolved context",
+                "path": "reference/schemas/resolved-context"
+              },
+              {
+                "title": "Response",
+                "path": "reference/schemas/response"
+              },
+              {
+                "title": "Response body object",
+                "path": "reference/schemas/response-body-object"
+              },
+              {
+                "title": "Response headers",
+                "path": "reference/schemas/response-headers"
+              },
+              {
+                "title": "Retry",
+                "path": "reference/schemas/retry"
+              },
+              {
+                "title": "routing",
+                "path": "reference/schemas/routing"
+              },
+              {
+                "title": "Run browser script (detailed)",
+                "path": "reference/schemas/run-browser-script-detailed"
+              },
+              {
+                "title": "Run code (detailed)",
+                "path": "reference/schemas/run-code-detailed"
+              },
+              {
+                "title": "Run shell command (detailed)",
+                "path": "reference/schemas/run-shell-command-detailed"
+              },
+              {
+                "title": "runBrowserScript",
+                "path": "reference/schemas/runbrowserscript"
+              },
+              {
+                "title": "runCode",
+                "path": "reference/schemas/runcode"
+              },
+              {
+                "title": "runShell",
+                "path": "reference/schemas/runshell"
+              },
+              {
+                "title": "Save cookie (detailed)",
+                "path": "reference/schemas/save-cookie-detailed"
+              },
+              {
+                "title": "saveCookie",
+                "path": "reference/schemas/savecookie"
+              },
+              {
+                "title": "screenshot",
+                "path": "reference/schemas/screenshot"
+              },
+              {
+                "title": "Source Location",
+                "path": "reference/schemas/source-location"
+              },
+              {
+                "title": "sourceIntegration",
+                "path": "reference/schemas/sourceintegration"
+              },
+              {
+                "title": "specification",
+                "path": "reference/schemas/specification"
+              },
+              {
+                "title": "startSurface",
+                "path": "reference/schemas/startsurface"
+              },
+              {
+                "title": "stopRecord",
+                "path": "reference/schemas/stoprecord"
+              },
+              {
+                "title": "stopRecord (detailed)",
+                "path": "reference/schemas/stoprecord-detailed"
+              },
+              {
+                "title": "swipe",
+                "path": "reference/schemas/swipe"
+              },
+              {
+                "title": "Swipe (directional)",
+                "path": "reference/schemas/swipe-directional"
+              },
+              {
+                "title": "Swipe (point-to-point)",
+                "path": "reference/schemas/swipe-point-to-point"
+              },
+              {
+                "title": "Target by element (detailed)",
+                "path": "reference/schemas/target-by-element-detailed"
+              },
+              {
+                "title": "Target by position",
+                "path": "reference/schemas/target-by-position"
+              },
+              {
+                "title": "Telemetry options",
+                "path": "reference/schemas/telemetry-options"
+              },
+              {
+                "title": "test",
+                "path": "reference/schemas/test"
+              },
+              {
+                "title": "type",
+                "path": "reference/schemas/type"
+              },
+              {
+                "title": "Type keys (detailed)",
+                "path": "reference/schemas/type-keys-detailed"
+              },
+              {
+                "title": "Verify resolution (detailed)",
+                "path": "reference/schemas/verify-resolution-detailed"
+              },
+              {
+                "title": "wait",
+                "path": "reference/schemas/wait"
+              }
+            ],
+            "icon": "lucide:database"
+          }
+        ],
+        "icon": "lucide:book-marked"
+      },
+      {
+        "tab": "Contribute",
+        "icon": "code-pull-request",
+        "groups": [
+          {
+            "group": "Contribute",
+            "path": "contribute/contribute/index",
+            "pages": [
+              {
+                "title": "Quick start",
+                "path": "contribute/contribute/quick-start"
+              },
+              {
+                "title": "Standard contributions",
+                "path": "contribute/contribute/standard-contributions"
+              },
+              {
+                "title": "Substantial contributions",
+                "path": "contribute/contribute/substantial-contributions"
+              },
+              {
+                "title": "Local development",
+                "path": "contribute/contribute/local-development"
+              },
+              {
+                "title": "Review process",
+                "path": "contribute/contribute/review-process"
+              },
+              {
+                "title": "Testing the docs",
+                "path": "contribute/contribute/testing"
+              },
+              {
+                "group": "Content templates",
+                "pages": [
+                  {
+                    "title": "How-to template",
+                    "path": "contribute/contribute/content-templates/how-to",
+                    "icon": "lucide:layout-template"
+                  },
+                  {
+                    "title": "Tutorial template",
+                    "path": "contribute/contribute/content-templates/tutorial",
+                    "icon": "lucide:graduation-cap"
+                  },
+                  {
+                    "title": "Reference template",
+                    "path": "contribute/contribute/content-templates/reference",
+                    "icon": "lucide:book-marked"
+                  },
+                  {
+                    "title": "Feature template",
+                    "path": "contribute/contribute/content-templates/feature",
+                    "icon": "lucide:layout-template"
+                  },
+                  {
+                    "title": "Troubleshooting template",
+                    "path": "contribute/contribute/content-templates/troubleshooting",
+                    "icon": "lucide:triangle-alert"
+                  }
+                ],
+                "icon": "lucide:file-text"
+              },
+              {
+                "group": "Repository guides",
+                "pages": [
+                  {
+                    "title": "doc-detective",
+                    "path": "contribute/contribute/repos/doc-detective"
+                  },
+                  {
+                    "title": "doc-detective-common",
+                    "path": "contribute/contribute/repos/doc-detective-common"
+                  },
+                  {
+                    "title": "doc-detective-core",
+                    "path": "contribute/contribute/repos/doc-detective-core"
+                  },
+                  {
+                    "title": "doc-detective.github.io",
+                    "path": "contribute/contribute/repos/doc-detectivegithubio"
+                  },
+                  {
+                    "title": "docker-image (alpha)",
+                    "path": "contribute/contribute/repos/docker-image"
+                  },
+                  {
+                    "title": "github-action",
+                    "path": "contribute/contribute/repos/github-action"
+                  }
+                ],
+                "icon": "lucide:book-open"
+              }
+            ],
+            "icon": "lucide:handshake"
+          }
+        ]
+      },
+      {
+        "tab": "Support",
+        "icon": "heart",
+        "groups": [
+          {
+            "group": "Support",
+            "path": "support",
+            "pages": [
+              {
+                "title": "Resources",
+                "path": "support/support/resources",
+                "icon": "lucide:file-text"
+              },
+              {
+                "title": "Telemetry and data collection",
+                "path": "support/support/legal/telemetry",
+                "icon": "lucide:database"
+              },
+              {
+                "title": "Privacy policy (Companion app)",
+                "path": "support/support/legal/privacy-policy-companion",
+                "icon": "lucide:lock"
+              }
+            ],
+            "icon": "lucide:headset"
+          }
+        ]
+      }
+    ]
+  }
+}
