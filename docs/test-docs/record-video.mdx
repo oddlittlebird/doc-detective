@@ -1,0 +1,59 @@
+---
+title: Record video
+description: Run a test that fills all fields in a form, capturing a video of the changes.
+---
+
+This example fills in all the fields on the Watson and Holmes Intake Form, while capturing a video record.
+
+The test spec is hosted online as a Markdown file, so you don't need to download it. You pass its URL to Doc Detective with the `--input` argument, and Doc Detective fetches and runs it.
+
+To run the test:
+
+1. [Set up your test environment](/docs/ci/set-up-environment) so the sample form is served at `http://localhost:8080/watson_and_holmes_intake_form.html`.
+2. Run the hosted *form-filler3.md* test spec with Doc Detective:
+
+   <Tabs>
+     <Tab title="NPX">
+       ```shell
+       npx doc-detective --input https://raw.githubusercontent.com/doc-detective/doc-detective/main/docs/examples/watson-and-holmes/form-filler3.md
+       ```
+     </Tab>
+
+     <Tab title="Docker">
+       ```shell
+       docker run docdetective/docdetective --input https://raw.githubusercontent.com/doc-detective/doc-detective/main/docs/examples/watson-and-holmes/form-filler3.md
+       ```
+
+       <Callout kind="info">
+         The `-v` argument isn't necessary for remotely hosted tests, since Docker doesn't need access to local files.
+       </Callout>
+     </Tab>
+   </Tabs>
+
+To record, you must run the test with *headless* mode turned off. The display window of the browser constrains the view area of the screenshot and video functions.
+
+## Code walkthrough
+
+These are the notable additions to the spec used in the [Capture screenshot](/docs/test-docs/capture-screenshots) tutorial.
+
+For this example, the *headless* setting must be false, so that the test actions are visible in the browser.
+
+```md
+{/* test {"testId":"form-filler3","detectSteps":false,"runOn":[{"platforms":["windows","mac","linux"],"browsers":{"name":"chrome","headless":false,"viewport":{"width":1180,"height":1480}}}]} */}
+```
+
+Start the recording with the [`record`](/docs/actions/record) action and an optional output path.
+
+```md
+{/* step {"description":"Start recording.","record":"./output/form-filler3-recording.mp4"} */}
+```
+
+After the actions are complete, stop the recording with the [`stopRecord`](/docs/actions/stoprecord) action.
+
+```md
+{/* step {"description":"Stop recording.","stopRecord":true} */}
+```
+
+## Complete test spec
+
+View the complete spec at [form-filler3.md](https://github.com/doc-detective/doc-detective/blob/main/docs/examples/watson-and-holmes/form-filler3.md).

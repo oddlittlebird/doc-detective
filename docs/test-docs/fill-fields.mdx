@@ -1,0 +1,75 @@
+---
+title: Fill in fields
+description: Run a short test that fills in the first and last name fields in a form.
+---
+
+Filling in form fields is a common task in procedures. This short test opens a sample input form for the Watson and Holmes Forensic Consulting agency and fills in just the first and last name.
+
+The test spec is hosted online as a Markdown file, so you don't need to download it. Pass its URL to Doc Detective with the `--input` argument, and Doc Detective fetches and runs it.
+
+To run the test:
+
+1. [Set up your test environment](/docs/ci/set-up-environment) so the sample form is served at `http://localhost:8080/watson_and_holmes_intake_form.html`.
+2. Run the hosted *form-filler1.md* test spec with Doc Detective:
+
+   <Tabs>
+     <Tab title="NPX">
+       ```shell
+       npx doc-detective --input https://raw.githubusercontent.com/doc-detective/doc-detective/main/docs/examples/watson-and-holmes/form-filler1.md
+       ```
+     </Tab>
+
+     <Tab title="Docker">
+       ```shell
+       docker run docdetective/docdetective --input https://raw.githubusercontent.com/doc-detective/doc-detective/main/docs/examples/watson-and-holmes/form-filler1.md
+       ```
+
+       <Callout kind="info">
+         The `-v` argument isn't necessary for remotely hosted tests, since Docker doesn't need access to local files.
+       </Callout>
+     </Tab>
+   </Tabs>
+
+<Image src="https://blob-cdn.documentation.ai/org-8c219759-7deb-445b-9908-6f7ab2e0f2a9/doc-e8ed780d-3d1b-44eb-a4e7-ece8319a2c12/1792613080669-60z6zqlb23u-form-filled-1-first-and-last-name.png?fm=auto&auto=compress%2Cformat" alt="First and Last Names fields completed." className="dai-mig-no-caption" />
+
+## Code walkthrough
+
+The test spec is a Markdown file with [inline tests](/docs/test-docs/inline). Each numbered step describes the action in prose, followed by a `{/* step ... */}` comment that Doc Detective runs.
+
+The test opens with an inline `test` comment that defines the execution environment. That's the platform and browser the test runs on. You can specify your own platform, but making the test compatible with other platforms doesn't hurt. Chrome is currently the only browser that supports the record feature, which later examples use. In the *headless* state, the test runs without showing the actions in a browser window. Set `headless` to `false` to watch the actions instead. The form in this example is too large to fit on the screen. The viewport is therefore set to the full size, even when it isn't displayed. This matters for taking screenshots, which a later tutorial covers.
+
+```md
+{/* test {"testId":"form-filler1","detectSteps":false,"runOn":[{"platforms":["windows","mac","linux"],"browsers":{"name":"chrome","headless":false,"viewport":{"width":1180,"height":1480}}}]} */}
+```
+
+Having set up the run environment, the test defines its steps. First, open the form in a web browser.
+
+```md
+{/* step {"description":"Go to the specified URL","goTo":"http://localhost:8080/watson_and_holmes_intake_form.html"} */}
+```
+
+Locate an element with the label "First Name:" and type in the value *Alphie*.
+
+```md
+{/* step {"description":"Type in the First Name","find":{"elementText":"First Name:","click":true,"type":"Alphie"}} */}
+```
+
+Locate an element with the label "Last Name:" and type in the value *Betaux*.
+
+```md
+{/* step {"description":"Type in the Last Name","find":{"elementText":"Last Name:","click":true,"type":"Betaux"}} */}
+```
+
+Capture a screenshot of the completed fields, then pause 10 seconds so you can see the results before the test ends. In real tests, avoid long pauses so tests run as quickly as possible. Pauses are still invaluable when you're learning or debugging.
+
+```md
+{/* step {"description":"Capture a screenshot of the completed form.","screenshot":"./output/form-filled-1-first-and-last-name.png"} */}
+
+{/* step {"description":"Pause long enough to show the changes.","wait":10000} */}
+```
+
+## Complete test spec
+
+View the complete spec at [form-filler1.md](https://github.com/doc-detective/doc-detective/blob/main/docs/examples/watson-and-holmes/form-filler1.md).
+
+Next step: see [Capturing a screenshot](/docs/test-docs/capture-screenshots).

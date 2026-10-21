@@ -1,5 +1,0 @@
-.husky/** text eol=lf
-
-# Schema reference pages are emitted with LF by docs/.scripts/buildSchemaReferencesV4.js.
-# Pin them to LF so the schema-refs drift check is stable across platforms.
-docs/fern/pages/reference/schemas/*.mdx text eol=lf
